@@ -1,0 +1,34 @@
+{
+  "name": "mmm-configeditor",
+  "version": "1.0.0",
+  "description": "A settings page for MagicMirror\u00b2 that edits config.js in place: changes only what you edit, keeps comments, validates before saving, and backs up every change.",
+  "main": "MMM-ConfigEditor.js",
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "^8.14.0"
+  },
+  "keywords": [
+    "MagicMirror",
+    "MagicMirror2",
+    "module",
+    "config",
+    "configuration",
+    "editor",
+    "settings"
+  ],
+  "author": "Justin Shultz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinS83/MMM-ConfigEditor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JustinS83/MMM-ConfigEditor/issues"
+  },
+  "homepage": "https://github.com/JustinS83/MMM-ConfigEditor#readme",
+  "scripts": {
+    "test": "node --test test/config-source.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

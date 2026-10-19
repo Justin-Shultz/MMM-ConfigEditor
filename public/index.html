@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirror Settings</title>
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+	<header class="top">
+		<h1>Mirror Settings</h1>
+		<nav class="tabs" role="tablist">
+			<button data-tab="modules" class="active">Modules</button>
+			<button data-tab="general">General</button>
+			<button data-tab="config">config.js</button>
+			<button data-tab="css">custom.css</button>
+			<button data-tab="backups">Backups</button>
+		</nav>
+	</header>
+
+	<main>
+		<p id="error" class="banner error hidden"></p>
+
+		<section id="tab-modules" class="tab">
+			<div id="modules"></div>
+			<div class="add-module">
+				<select id="addModuleSelect"><option value="">Add a module…</option></select>
+				<button id="addModule">Add</button>
+			</div>
+		</section>
+
+		<section id="tab-general" class="tab hidden">
+			<p class="muted">Top-level settings. Changing <code>address</code>, <code>port</code> or <code>ipWhitelist</code> can lock this page out; the Backups tab and SSH are the way back.</p>
+			<div id="general"></div>
+		</section>
+
+		<section id="tab-config" class="tab hidden">
+			<p class="muted">Edit the file directly. Saving checks that it loads before writing it, and keeps a backup.</p>
+			<textarea id="configText" spellcheck="false" wrap="off"></textarea>
+			<div class="row">
+				<button id="checkConfig">Check</button>
+				<button id="saveConfig" class="primary">Save &amp; restart</button>
+				<span id="configStatus" class="muted"></span>
+			</div>
+		</section>
+
+		<section id="tab-css" class="tab hidden">
+			<p class="muted">Saving applies right away on the mirror, no restart.</p>
+			<textarea id="cssText" spellcheck="false" wrap="off"></textarea>
+			<div class="row">
+				<button id="saveCss" class="primary">Save</button>
+				<span id="cssStatus" class="muted"></span>
+			</div>
+		</section>
+
+		<section id="tab-backups" class="tab hidden">
+			<p class="muted">A copy is saved before every change (the last 30 of each file). Restoring a config.js backup restarts the mirror.</p>
+			<ul id="backups" class="backups"></ul>
+		</section>
+	</main>
+
+	<footer id="savebar" class="savebar hidden">
+		<span id="changeCount"></span>
+		<button id="discard">Discard</button>
+		<button id="save" class="primary">Save &amp; restart</button>
+	</footer>
+
+	<script src="editor.js"></script>
+</body>
+</html>
