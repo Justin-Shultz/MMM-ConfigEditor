@@ -19,12 +19,12 @@
   "author": "Justin Shultz",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JustinS83/MMM-ConfigEditor.git"
+    "url": "git+https://github.com/Justin-Shultz/MMM-ConfigEditor.git"
   },
   "bugs": {
-    "url": "https://github.com/JustinS83/MMM-ConfigEditor/issues"
+    "url": "https://github.com/Justin-Shultz/MMM-ConfigEditor/issues"
   },
-  "homepage": "https://github.com/JustinS83/MMM-ConfigEditor#readme",
+  "homepage": "https://github.com/Justin-Shultz/MMM-ConfigEditor#readme",
   "scripts": {
     "test": "node --test test/config-source.test.js"
   },

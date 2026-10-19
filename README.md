@@ -35,7 +35,7 @@ or lose comments. MMM-ConfigEditor works differently:
 
 ```bash
 cd ~/MagicMirror/modules
-git clone https://github.com/JustinS83/MMM-ConfigEditor
+git clone https://github.com/Justin-Shultz/MMM-ConfigEditor
 cd MMM-ConfigEditor
 npm install
 ```
