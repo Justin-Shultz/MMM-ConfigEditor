@@ -105,3 +105,7 @@ npm test
 ## License
 
 MIT
+
+---
+
+If you liked this project or it helped you, consider [buying me a coffee](https://ko-fi.com/justin23111) ☕
