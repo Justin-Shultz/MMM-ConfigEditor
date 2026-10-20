@@ -60,6 +60,15 @@ address: "0.0.0.0",
 ipWhitelist: [], // [] allows any device on your network
 ```
 
+## Update
+Update this module by navigating to its directory and using git pull:
+
+```bash
+cd ~/MagicMirror/modules/MMM-ConfigEditor
+git pull
+npm install --omit=dev
+```
+
 ## Options
 
 | Option | Default | Description |

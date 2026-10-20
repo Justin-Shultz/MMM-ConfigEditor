@@ -150,7 +150,7 @@ module.exports = NodeHelper.create({
 		try {
 			source.parse(text);
 		} catch (error) {
-			throw new Error(`Syntax error: ${error.message}`);
+			throw new Error(`Syntax error: ${error.message}`, { cause: error });
 		}
 		const tmp = path.join(os.tmpdir(), `mm-config-check-${process.pid}-${Date.now()}.js`);
 		await fsp.writeFile(tmp, text);
